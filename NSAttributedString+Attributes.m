@@ -105,7 +105,7 @@
 }
 -(void)setTextColor:(UIColor*)color range:(NSRange)range {
 	// kCTForegroundColorAttributeName
-	[self removeAttribute:(NSString*)kCTForegroundColorAttributeName range:range]; // Work around for Apple leak
+	//[self removeAttribute:(NSString*)kCTForegroundColorAttributeName range:range]; // Work around for Apple leak
 	[self addAttribute:(NSString*)kCTForegroundColorAttributeName value:(id)color.CGColor range:range];
 }
 
